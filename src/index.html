@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yein Narayana - Frontend Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-yein">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="hidden-cta d-inline-flex d-lg-none"
+          >Open to Internship</span
+        >
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools-favorit">Tools Favorit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link nav-link-cta" href="#">Open to Internship</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container" id="about">
+      <div class="row hero">
+        <div class="col-12 col-lg-7 hero-text">
+          <span class="halo">Halo! Kenalin...</span>
+          <h1 class="mb-5">Saya Yein Narayana seorang Frontend Engineer</h1>
+          <a href="/resume.txt" download class="btn btn-primary">
+            Download Resume
+          </a>
+        </div>
+        <div class="col-11 col-lg-5 hero-image">
+          <span class="bulb-primary"></span>
+          <span class="bulb-compact">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <img
+            class="image"
+            src="/images/hero-yein.png"
+            alt="yein narayana frontend engineer posing"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid featured-section-1" id="tools-favorit">
+      <h2 class="text-center py-4">Tools Favorit Saya</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-5">
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/images/figma.png" alt="" />
+            </span>
+            <span class="tool-label">Figma</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/images/vscode.png" alt="" />
+            </span>
+            <span class="tool-label">Visual Studio Code</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/images/reactjs.png" alt="" />
+            </span>
+            <span class="tool-label">ReactJS</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/images/tailwindcss.png" alt="" />
+            </span>
+            <span class="tool-label">Tailwindcss</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/images/trello.png" alt="" />
+            </span>
+            <span class="tool-label">Trello</span>
+          </div>
+          <!-- end tool -->
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5" id="portfolio">
+      <h2 class="text-center py-4 fw-bold">My Portfolio</h2>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-yein" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="all-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#all"
+            type="button"
+            role="tab"
+            aria-controls="all"
+            aria-selected="true"
+          >
+            All
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="web-design-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#web-design"
+            type="button"
+            role="tab"
+            aria-controls="web-design"
+            aria-selected="false"
+          >
+            Web Design
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="mobile-app-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#mobile-app"
+            type="button"
+            role="tab"
+            aria-controls="mobile-app"
+            aria-selected="false"
+          >
+            Mobile App
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="digital-marketing-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#digital-marketing"
+            type="button"
+            role="tab"
+            aria-controls="digital-marketing"
+            aria-selected="false"
+          >
+            Digital Markting
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div
+          class="tab-pane active"
+          id="all"
+          role="tabpanel"
+          aria-labelledby="all-tab"
+          tabindex="0"
+        >
+          <!-- grid portfolio -->
+          <div class="grid">
+            <!-- col1 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img
+                    src="/images/bwamicro.png"
+                    class="w-100"
+                    alt="bwamicro"
+                  />
+                </div>
+                <h6 class="fw-bolder">Website Kelas Online</h6>
+              </div>
+            </div>
+            <!-- end col1 -->
+
+            <!-- col2 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/images/bwamern.png" class="w-100" alt="bwamern" />
+                </div>
+                <h6 class="fw-bolder">Website Travel</h6>
+              </div>
+            </div>
+            <!-- end col2 -->
+
+            <!-- col3 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/images/bwarfd.png" class="w-100" alt="bwarfd" />
+                </div>
+                <h6 class="fw-bolder">Website Ecommerce</h6>
+              </div>
+            </div>
+            <!-- end col3 -->
+
+            <!-- col4 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/images/goatube.png" class="w-100" alt="goatube" />
+                </div>
+                <h6 class="fw-bolder">Landing Page Travel App</h6>
+              </div>
+            </div>
+            <!-- end col4 -->
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="web-design"
+          role="tabpanel"
+          aria-labelledby="web-design-tab"
+          tabindex="0"
+        >
+          <div class="grid">
+            <!-- col1 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img
+                    src="/images/bwamicro.png"
+                    class="w-100"
+                    alt="bwamicro"
+                  />
+                </div>
+                <h6 class="fw-bolder">Website Kelas Online</h6>
+              </div>
+            </div>
+            <!-- end col1 -->
+            <!-- col4 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/images/goatube.png" class="w-100" alt="goatube" />
+                </div>
+                <h6 class="fw-bolder">Landing Page Travel App</h6>
+              </div>
+            </div>
+            <!-- end col4 -->
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="mobile-app"
+          role="tabpanel"
+          aria-labelledby="mobile-app-tab"
+          tabindex="0"
+        >
+          <div class="grid">
+            <!-- col3 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/images/bwarfd.png" class="w-100" alt="bwarfd" />
+                </div>
+                <h6 class="fw-bolder">Website Ecommerce</h6>
+              </div>
+            </div>
+            <!-- end col3 -->
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="digital-marketing"
+          role="tabpanel"
+          aria-labelledby="digital-marketing-tab"
+          tabindex="0"
+        >
+          <div class="grid">
+            <!-- col4 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/images/goatube.png" class="w-100" alt="goatube" />
+                </div>
+                <h6 class="fw-bolder">Landing Page Travel App</h6>
+              </div>
+            </div>
+            <!-- end col4 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5" id="contact-us">
+      <h2 class="text-center py-4 fw-bold">Say Hi!</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a
+            href="https://www.instagram.com/yeinnarayana/"
+            class=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/instagram.png" alt="instagram yeinnarayana" />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://www.linkedin.com/in/yein-narayana/"
+            class=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/linkedin.png" alt="linkedin yeinnarayana" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary py-4">
+      <div class="container text-center fw-bold text-white">
+        Made with &lsaquo;3 By Yein Narayana . yeinnarayana.github.io
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

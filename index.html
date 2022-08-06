@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yein Narayana - Frontend Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index.cc6b0d05.js"></script>
+    <link rel="stylesheet" href="/assets/index.c215015e.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-yein">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="hidden-cta d-inline-flex d-lg-none"
+          >Open to Internship</span
+        >
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools-favorit">Tools Favorit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link nav-link-cta" href="#">Open to Internship</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container" id="about">
+      <div class="row hero">
+        <div class="col-12 col-lg-7 hero-text">
+          <span class="halo">Halo! Kenalin...</span>
+          <h1 class="mb-5">Saya Yein Narayana seorang Frontend Engineer</h1>
+          <a href="/resume.txt" download class="btn btn-primary">
+            Download Resume
+          </a>
+        </div>
+        <div class="col-11 col-lg-5 hero-image">
+          <span class="bulb-primary"></span>
+          <span class="bulb-compact">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <img
+            class="image"
+            src="/assets/hero-yein.cbe22a68.png"
+            alt="yein narayana frontend engineer posing"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid featured-section-1" id="tools-favorit">
+      <h2 class="text-center py-4">Tools Favorit Saya</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-5">
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="data:image/png;base64,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" alt="" />
+            </span>
+            <span class="tool-label">Figma</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/assets/vscode.1826e8a7.png" alt="" />
+            </span>
+            <span class="tool-label">Visual Studio Code</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/assets/reactjs.853408dc.png" alt="" />
+            </span>
+            <span class="tool-label">ReactJS</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="/assets/tailwindcss.e1d6de03.png" alt="" />
+            </span>
+            <span class="tool-label">Tailwindcss</span>
+          </div>
+          <!-- end tool -->
+
+          <!-- start tool -->
+          <div class="col d-flex justify-content-center tools">
+            <span class="tool-img">
+              <img src="data:image/png;base64,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" alt="" />
+            </span>
+            <span class="tool-label">Trello</span>
+          </div>
+          <!-- end tool -->
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5" id="portfolio">
+      <h2 class="text-center py-4 fw-bold">My Portfolio</h2>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-yein" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="all-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#all"
+            type="button"
+            role="tab"
+            aria-controls="all"
+            aria-selected="true"
+          >
+            All
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="web-design-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#web-design"
+            type="button"
+            role="tab"
+            aria-controls="web-design"
+            aria-selected="false"
+          >
+            Web Design
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="mobile-app-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#mobile-app"
+            type="button"
+            role="tab"
+            aria-controls="mobile-app"
+            aria-selected="false"
+          >
+            Mobile App
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="digital-marketing-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#digital-marketing"
+            type="button"
+            role="tab"
+            aria-controls="digital-marketing"
+            aria-selected="false"
+          >
+            Digital Markting
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div
+          class="tab-pane active"
+          id="all"
+          role="tabpanel"
+          aria-labelledby="all-tab"
+          tabindex="0"
+        >
+          <!-- grid portfolio -->
+          <div class="grid">
+            <!-- col1 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img
+                    src="/assets/bwamicro.c07f08d0.png"
+                    class="w-100"
+                    alt="bwamicro"
+                  />
+                </div>
+                <h6 class="fw-bolder">Website Kelas Online</h6>
+              </div>
+            </div>
+            <!-- end col1 -->
+
+            <!-- col2 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/assets/bwamern.bba49012.png" class="w-100" alt="bwamern" />
+                </div>
+                <h6 class="fw-bolder">Website Travel</h6>
+              </div>
+            </div>
+            <!-- end col2 -->
+
+            <!-- col3 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/assets/bwarfd.124fecdc.png" class="w-100" alt="bwarfd" />
+                </div>
+                <h6 class="fw-bolder">Website Ecommerce</h6>
+              </div>
+            </div>
+            <!-- end col3 -->
+
+            <!-- col4 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/assets/goatube.99fc7db9.png" class="w-100" alt="goatube" />
+                </div>
+                <h6 class="fw-bolder">Landing Page Travel App</h6>
+              </div>
+            </div>
+            <!-- end col4 -->
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="web-design"
+          role="tabpanel"
+          aria-labelledby="web-design-tab"
+          tabindex="0"
+        >
+          <div class="grid">
+            <!-- col1 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img
+                    src="/assets/bwamicro.c07f08d0.png"
+                    class="w-100"
+                    alt="bwamicro"
+                  />
+                </div>
+                <h6 class="fw-bolder">Website Kelas Online</h6>
+              </div>
+            </div>
+            <!-- end col1 -->
+            <!-- col4 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/assets/goatube.99fc7db9.png" class="w-100" alt="goatube" />
+                </div>
+                <h6 class="fw-bolder">Landing Page Travel App</h6>
+              </div>
+            </div>
+            <!-- end col4 -->
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="mobile-app"
+          role="tabpanel"
+          aria-labelledby="mobile-app-tab"
+          tabindex="0"
+        >
+          <div class="grid">
+            <!-- col3 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/assets/bwarfd.124fecdc.png" class="w-100" alt="bwarfd" />
+                </div>
+                <h6 class="fw-bolder">Website Ecommerce</h6>
+              </div>
+            </div>
+            <!-- end col3 -->
+          </div>
+        </div>
+        <div
+          class="tab-pane"
+          id="digital-marketing"
+          role="tabpanel"
+          aria-labelledby="digital-marketing-tab"
+          tabindex="0"
+        >
+          <div class="grid">
+            <!-- col4 -->
+            <div class="g-col-12 g-col-lg-3">
+              <div class="d-flex flex-column">
+                <div class="rounded-3 overflow-hidden mb-3">
+                  <img src="/assets/goatube.99fc7db9.png" class="w-100" alt="goatube" />
+                </div>
+                <h6 class="fw-bolder">Landing Page Travel App</h6>
+              </div>
+            </div>
+            <!-- end col4 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5" id="contact-us">
+      <h2 class="text-center py-4 fw-bold">Say Hi!</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a
+            href="https://www.instagram.com/yeinnarayana/"
+            class=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="data:image/png;base64,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" alt="instagram yeinnarayana" />
+          </a>
+        </div>
+        <div class="col-auto">
+          <a
+            href="https://www.linkedin.com/in/yein-narayana/"
+            class=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARESURBVHgB7dzbaxRXHAfw7283m21tBe3aQq0vIn3p9aHQlhJo2NhKa176Eqilj3Y1K1ts/4CUvhRKn6zJGi8oilERBEEJiBvzoIgP3lBUxBdRvIsaNV6yOz9/k6jEy2bnjJ6jM/P7wGRnZ052yXfPnjlzZnIApZRSSimllFJKqfgghMSrW9/AcLogrzAPjI/l8S3EEeM2iI6CuA8jzb1U6r+HEEIFzUtaZ6ApvV1WP0OyHEa11k6lwbMwZBz0aE2+k96H5IX8iITd/JVpzU7BlN9cJDdk3+doGvkNhsyD9tvkxGPjDMyDBj6C+gSGwgT9NpRxBmGCViFo0I5o0I5o0I64CvqqnML+BfJawCS9Fv5RHtfJ9hoSogn27UeG59L8gYvjth2XpZ/L+TUS+FYkoCdju0ZfB8vYwJMhP0YLBwbkBGgBEsBu0MzLqDh4YcIyCyp9Uu4EYs5u0CkMNCpCJAORKWpYLursBl3joUDlGDcQc5ZrdHpWoHKEDxFzlg+GjUe5eGlbTmr0HMSc7V7HXC7P7qi3k1nqcpr+l9XJiDn7Jywer+Putt+5q/WJPjuXv38PPfmNkvbPSADzS1k9bYxwzkkTsUve8pqcJc6U53lZ3kREUWfFKDsXZ4aPTJeP9Re/i5FEOqjkiMsa7ZJ/hfq8LMPyBcpJU/WufNlfaaWyHzThX/lj67cXjClSpvCcPTtkOYj6/IGo4rjnQxLoKjlJ2oTM0AEq7B95/BZdXSlM3zMDnvctPPpV3u87OGb/YDjtnSbq2Fx3OJR787NQo1PP7CDqpIU7y/V/b877qFXPPSy7AalqiQqDVxAAd89ukQ9lrazOREimB8M4tNFd8oHMCxqyj4o7d/s3wcjqMTgS8aB5i9SsvxEClfovw8NP8NtxByIcdOYGmjPz8QJoUeWkHCNWwoHI9jqosM2viS+hNqb/k2HGTljOIvH9aCruOCMPB2BZbPrRo6OAKfpa1qbJcgn3vL20ePB6wF+vyPIlLIp80Nz7RQbVKf9IR3WRPMuObZWeVzZ9UwazFlOxsirAqxx8gXvyA4l+0zEW8p+yln1qz2TZvoK78980fA3CaVgW6aC5nP9AQipNUITkZOYPNFJNG9/BbyriNZra5UemQaFWNDJp+CYsi3bQjE8DlMpxT8vUCUtU796FZVE/M5warNikCe+EGhuAYg8WRb3pCBh0LcCVHLJ6RSLqvY5ssGJeo3bcOr3C4ogG7YgG7YgG7YgG7YgG7YgG7YgG7YgG7YgG7YgG7YgG7YgG7YjLG9FjJYn33kWCBu2IBu2IBu2IBu1ImKBvQQX7H/dxwgTt7C7515hxBmFmclyPpCM2zsA86JHmXvgToSYWH0IutxyGjIMenWW2WvPveUtg2BIyoZ06Nt+HofATdS/5ITs26+zoVBH+XJ1xnYDqFhhHkOI+vyaHCVkppZRSSimllFIqbh4Apo0XaLFmoHsAAAAASUVORK5CYII=" alt="linkedin yeinnarayana" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary py-4">
+      <div class="container text-center fw-bold text-white">
+        Made with &lsaquo;3 By Yein Narayana . yeinnarayana.github.io
+      </div>
+    </footer>
+
+    
+  </body>
+</html>
