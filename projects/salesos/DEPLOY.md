@@ -36,7 +36,12 @@ npm run dev           # verify it connects locally
 
 ## 3. Deploy to Vercel
 
-1. Push this repo to GitHub and **Import** it in Vercel.
+This app lives in a **monorepo subfolder** (`projects/salesos`) inside the
+`mrneverflatz.github.io` repo, so Vercel must be pointed at it.
+
+1. In Vercel, **Import** the `mrneverflatz.github.io` repo, then set
+   **Root Directory = `projects/salesos`** (Project → Settings → Build & Deployment,
+   or during import). Everything else (build command, output) is auto-detected.
 2. **Environment Variables** (Project → Settings → Environment Variables) — add for
    Production (and Preview if you want):
    - `DATABASE_URL` = the Supabase session-pooler string from step 1
