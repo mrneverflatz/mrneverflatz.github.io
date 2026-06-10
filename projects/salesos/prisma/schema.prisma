@@ -1,0 +1,119 @@
+// SalesOS — Prisma schema
+// Refined from the SalesOS spec: Deal gains stageEnteredAt, closedAt, dealType (NEW|EXPANSION);
+// User gains `active` to support Team deactivate. See plan: help-me-read-this-silly-valley.md
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id             String     @id @default(cuid())
+  email          String     @unique
+  passwordHash   String
+  name           String
+  role           Role       @default(REP)
+  avatarInitials String?
+  active         Boolean    @default(true)
+  createdAt      DateTime   @default(now())
+  deals          Deal[]     @relation("AssignedRep")
+  activities     Activity[]
+}
+
+enum Role {
+  ADMIN
+  MANAGER
+  REP
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email     String?
+  phone     String?
+  company   String
+  title     String?
+  notes     String?
+  createdAt DateTime @default(now())
+  deals     Deal[]
+}
+
+model Deal {
+  id                String     @id @default(cuid())
+  title             String
+  value             Float // in USD
+  stage             DealStage
+  probability       Int // 0-100
+  expectedCloseDate DateTime
+  stageEnteredAt    DateTime   @default(now()) // reset on every stage change
+  closedAt          DateTime? // set when stage -> CLOSED_WON | CLOSED_LOST
+  dealType          DealType   @default(NEW)
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+  contactId         String
+  contact           Contact    @relation(fields: [contactId], references: [id])
+  assignedTo        String
+  rep               User       @relation("AssignedRep", fields: [assignedTo], references: [id])
+  notes             String?
+  lostReason        String?
+  activities        Activity[]
+
+  @@index([stage])
+  @@index([assignedTo])
+  @@index([contactId])
+}
+
+enum DealStage {
+  LEAD
+  QUALIFIED
+  PROPOSAL
+  NEGOTIATION
+  CLOSED_WON
+  CLOSED_LOST
+}
+
+enum DealType {
+  NEW
+  EXPANSION
+}
+
+model Activity {
+  id        String       @id @default(cuid())
+  type      ActivityType
+  note      String?
+  createdAt DateTime     @default(now())
+  dealId    String
+  deal      Deal         @relation(fields: [dealId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User         @relation(fields: [userId], references: [id])
+
+  @@index([dealId])
+}
+
+enum ActivityType {
+  CALL
+  EMAIL
+  MEETING
+  NOTE
+  STAGE_CHANGE
+}
+
+model MonthlySnapshot {
+  id                String   @id @default(cuid())
+  month             Int // 1-12
+  year              Int
+  revenue           Float // actual closed won
+  forecastedRevenue Float
+  newBusiness       Float // won revenue from NEW deals
+  expansion         Float // won revenue from EXPANSION deals
+  newDeals          Int
+  wonDeals          Int
+  lostDeals         Int
+  createdAt         DateTime @default(now())
+
+  @@unique([year, month])
+}
